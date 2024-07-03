@@ -13,6 +13,7 @@
   import { mapState } from 'vuex';
   
   export default {
+    name: 'ExperiencesComp',
     computed: {
       ...mapState(['experiences']),
     },

@@ -16,6 +16,7 @@
   import { mapState } from 'vuex';
   
   export default {
+    name: 'SkillsComp',
     computed: {
       ...mapState(['skills']),
     },
