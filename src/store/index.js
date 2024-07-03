@@ -7,10 +7,25 @@ const DATA_URL = "https://siphochris.github.io/eompdata/"
 const store = createStore({
   state: {
     jobTitle: [],
-    about: {},
+    about: {
+      description: [],
+      profile: ''
+    },
     education: [],
-    experiences: {},
-    skills: {},
+    experiences: {
+      id: null,
+      companyName: '',
+      jobTitle: '',
+      duration: '',
+      duties: []
+    },
+    skills: {
+      title: '',
+      techStack: {
+        frontend: [],
+        tools: []
+      }
+    },
     testimonials: [],
     projects: [],
   },

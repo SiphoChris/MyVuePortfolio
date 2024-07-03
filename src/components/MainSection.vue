@@ -24,7 +24,7 @@ export default {
     Projects,
     Skills,
     Experiences,
-    Testimonials,
+    Testimonials
   },
 };
 </script>
