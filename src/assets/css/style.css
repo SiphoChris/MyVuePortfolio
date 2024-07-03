@@ -42,3 +42,14 @@ button.cta:hover{
 button.cta:active{
   opacity: .5;
 }
+
+
+
+
+/* footer */
+
+footer{
+  padding: 36px 0;
+  color: var(--light-text);
+  background-color: var(--primary);
+}
