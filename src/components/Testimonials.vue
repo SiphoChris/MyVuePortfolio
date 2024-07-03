@@ -3,7 +3,7 @@
     <div v-for="testimonial in testimonials" :key="testimonial.name">
       <h3>{{ testimonial.name }} {{ testimonial.surname }}</h3>
       <p>{{ testimonial.testimonial }}</p>
-      <img :src="testimonial.profile" :alt="testimonial.name" />
+      <img :src="testimonial.profile" :alt="testimonial.name" class="testimonial-image"/>
     </div>
   </div>
 </template>
@@ -17,4 +17,9 @@ export default {
   },
 };
 </script>
+<style scoped>
+.testimonial-image{
+  width: 250px;
+}
+</style>
   
