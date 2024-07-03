@@ -36,19 +36,40 @@ button.cta {
   border: none;
   font-weight: bold;
 }
-button.cta:hover{
-  opacity: .8;
+button.cta:hover {
+  opacity: 0.8;
 }
-button.cta:active{
-  opacity: .5;
+button.cta:active {
+  opacity: 0.5;
 }
 
+/* hero section */
 
+.hero-section {
+  padding: 36px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary);
+  color: var(--light-text);
+}
 
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.hero-image {
+  width: 250px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
 
 /* footer */
 
-footer{
+footer {
   padding: 36px 0;
   color: var(--light-text);
   background-color: var(--primary);
