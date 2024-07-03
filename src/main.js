@@ -5,5 +5,15 @@ import store from './store'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap'
 import 'bootstrap-icons/font/bootstrap-icons.css'
+import Swal from 'sweetalert2'
 
-createApp(App).use(store).use(router).mount('#app')
+const app = createApp(App);
+
+app.use(store);
+
+app.use(router)
+
+store.dispatch('fetchData'); // Fetch data when the app loads
+
+app.mount('#app');
+
