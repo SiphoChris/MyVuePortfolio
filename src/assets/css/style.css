@@ -1,0 +1,15 @@
+:root {
+  --primary: #023047;
+  --secondary: #8ecae6;
+  --accent: #fb8500;
+  --light-text: #eee6e8;
+  --dark-text: #0e0d0f;
+}
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+  }
