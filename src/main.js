@@ -5,7 +5,6 @@ import store from './store'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap'
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import Swal from 'sweetalert2'
 
 const app = createApp(App);
 

@@ -1,5 +1,6 @@
 import { createStore } from 'vuex'
 import axios from 'axios'
+import Swal from 'sweetalert2'
 
 const DATA_URL = "https://siphochris.github.io/eompdata/"
 
