@@ -7,9 +7,38 @@
 }
 
 #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-  }
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* nav */
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+button.cta {
+  width: fit-content;
+  padding: 12px 12px;
+  border-radius: 6px;
+  color: var(--dark-text);
+  background-color: var(--accent);
+  border: none;
+  font-weight: bold;
+}
+button.cta:hover{
+  opacity: .8;
+}
+button.cta:active{
+  opacity: .5;
+}
