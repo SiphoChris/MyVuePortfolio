@@ -67,6 +67,11 @@ button.cta:active {
   border-radius: 50%;
 }
 
+/* form */
+form{
+  background-color: var(--accent);
+}
+
 /* footer */
 
 footer {
