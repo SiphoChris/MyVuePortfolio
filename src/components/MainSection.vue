@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container-fluid">
     <Spinner v-if="loading" />
     <div v-else class="layout">
       <Container>
