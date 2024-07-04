@@ -1,31 +1,15 @@
 import { createStore } from 'vuex'
 import axios from 'axios'
-import Swal from 'sweetalert2'
 
 const DATA_URL = "https://siphochris.github.io/eompdata/"
 
 const store = createStore({
   state: {
     jobTitle: [],
-    about: {
-      description: [],
-      profile: ''
-    },
+    about: {},
     education: [],
-    experiences: {
-      id: null,
-      companyName: '',
-      jobTitle: '',
-      duration: '',
-      duties: []
-    },
-    skills: {
-      title: '',
-      techStack: {
-        frontend: [],
-        tools: []
-      }
-    },
+    experiences: {},
+    skills: {},
     testimonials: [],
     projects: [],
   },
@@ -68,7 +52,7 @@ const store = createStore({
         Swal.fire({
           icon: "error",
           title: "Oops...",
-          text: "Data failed to load",
+          text: "Data failed to load", error
         });
       }
     },

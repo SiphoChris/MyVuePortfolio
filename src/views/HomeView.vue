@@ -1,7 +1,8 @@
 <template>
-  <div class="home">
+  <div class="home containter-fluid">
     <Nav />
     <Hero />
+    <About />
     <MainSection />
     <Contact />
     <FooterComp />
@@ -11,6 +12,7 @@
 <script>
 import Nav from '@/components/NavBar.vue'
 import Hero from "@/components/HeroSection.vue";
+import About from '@/components/About.vue'
 import MainSection from '@/components/MainSection.vue'
 import Contact from '@/components/Contact.vue'
 import FooterComp from '@/components/Footer.vue'
@@ -20,6 +22,7 @@ export default {
   components: {
     Nav,
     Hero,
+    About,
     MainSection,
     Contact,
     FooterComp,
