@@ -1,9 +1,8 @@
 <template>
-  <Container>
-    <template #content>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col">
+  <div id="reachMe">
+      <div class="container-fluid p-5" id="contact-wrapper">
+        <div class="row justify-content-center">
+          <div class="col-7">
             <form action="https://formspree.io/f/mwpeknkz" method="POST">
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label"
@@ -15,6 +14,7 @@
                   id="exampleFormControlInput1"
                   placeholder="name@example.com"
                   name="email"
+                  required
                 />
               </div>
               <div class="mb-3">
@@ -26,6 +26,7 @@
                   id="exampleFormControlTextarea1"
                   rows="3"
                   name="message"
+                  required
                 ></textarea>
               </div>
               <button type="submit" class="btn btn-primary">Submit</button>
@@ -33,17 +34,12 @@
           </div>
         </div>
       </div>
-    </template>
-  </Container>
+    </div>
 </template>
 
 <script>
-import Container from "@/components/Container.vue";
 
 export default {
-  components: {
-    Container,
-  },
 };
 </script>
 

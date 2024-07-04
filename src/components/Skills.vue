@@ -1,21 +1,34 @@
 <template>
-  <div>
-    <h2>{{ skills.title }}</h2>
-    <h3>Frontend</h3>
-    <ul>
-      <li v-for="tech in skills.techStack.frontend" :key="tech">{{ tech }}</li>
-    </ul>
-    <h3>Tools</h3>
-    <ul>
-      <li v-for="tool in skills.techStack.tools" :key="tool">{{ tool }}</li>
-    </ul>
+  <div class="container my-5">
+    <div
+      class="row justify-content-between align-items-center gap-4"
+      id="skills"
+    >
+      <h2>Web Development Skills</h2>
+      <Card v-for="(tech, index) in skills.techStack.frontend" :key="index">
+        <template #CardBody>
+          <img :src="tech.img" alt="skills-img"/>
+          <h3>{{ tech.title }}</h3>
+        </template>
+      </Card>
+      <Card v-for="(tech, index) in skills.techStack.tools" :key="index">
+        <template #CardBody>
+          <img :src="tech.img" alt="skills-img" />
+          <h3>{{ tech.title }}</h3>
+        </template>
+      </Card>
+    </div>
   </div>
 </template>
 
 <script>
-import { mapState } from 'vuex';
+import { mapState } from "vuex";
+import Card from "@/components/Card.vue";
 
 export default {
+  components: {
+    Card,
+  },
   computed: {
     ...mapState({
       skills: (state) => state.skills,
@@ -23,3 +36,5 @@ export default {
   },
 };
 </script>
+<style scoped>
+</style>

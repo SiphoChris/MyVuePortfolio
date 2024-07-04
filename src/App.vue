@@ -9,6 +9,7 @@ components: {
   HomeView
 }
 }
+
 </script>
 
 <style src="./assets/css/style.css">
