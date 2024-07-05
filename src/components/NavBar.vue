@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top p-4">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top p-4">
     <div class="container-fluid">
       <a class="navbar-brand fw-bold" href="#">Sipho Nkebe</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
