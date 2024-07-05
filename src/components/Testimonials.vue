@@ -36,6 +36,12 @@
             data-bs-slide-to="4"
             aria-label="Slide 5"
           ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="5"
+            aria-label="Slide 6"
+          ></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item" :class="{active: testimonial.id == 1}" data-bs-interval="10000" v-for="testimonial in testimonials" :key="testimonial.id">
