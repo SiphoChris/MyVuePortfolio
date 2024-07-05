@@ -29,6 +29,7 @@
                 required
               ></textarea>
             </div>
+            <button type="reset" class="btn btn-outline-dark me-4">Clear</button>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
@@ -38,7 +39,7 @@
         <li><i class="bi bi-telephone-fill"></i> +27 78 653 2395</li>
         <li><i class="bi bi-envelope-at-fill"></i> siphonkebe@gmail.com</li>
         <li><i class="bi bi-geo-alt-fill"></i> Phillipi East, Cape Town</li>
-        <li><span class="me-2"><a href="https://github.com/SiphoChris"><i class="bi bi-github fs-3"></i></a></span> <span><a href="https://www.linkedin.com/in/sipho-nkebe-979783312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin fs-3"></i></a></span></li>
+        <li><span class="me-2"><a target="_blank" href="https://github.com/SiphoChris"><i class="bi bi-github fs-3"></i></a></span> <span><a target="_blank" href="https://www.linkedin.com/in/sipho-nkebe-979783312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin fs-3"></i></a></span></li>
       </ul>
     <div class="contact-details"></div>
   </div>
