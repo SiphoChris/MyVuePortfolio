@@ -1,7 +1,7 @@
 <template>
     <section class="about-section my-5" id="ABOUT">
         <div class="container">
-          <div class="card w-90 mb-3" data-aos="flip-up">
+          <div class="card w-90 mb-3" data-aos="fade-up">
             <div class="card-body text-center p-5">
               <h5 class="card-title h3 mb-5">About Me</h5>
               <p class="card-text h5">

@@ -2,7 +2,7 @@
   <div class="container" id="projects">
     <h3 class="mb-5">Projects</h3>
     <div class="row gap-4 justify-content-center">
-      <Card v-for="project in projects" :key="project.name" class="box">
+      <Card v-for="project in projects" :key="project.name" class="box" data-aos="zoom-in-up">
         <template #CardImage>
           <img :src="project.image" class="card-img-top" :alt="project.name" loading="lazy"/>
         </template>

@@ -1,6 +1,6 @@
 <template>
   <h3>Work Experiences</h3>
-    <div class="container my-5">
+    <div class="container my-5" data-aos="zoom-in-down">
       <div class="row my-5">
         <div id="experience">
       <h3>{{ experiences.companyName }}</h3>

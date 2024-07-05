@@ -6,7 +6,7 @@
     >
       <h2 class="my-5">Web Development Skills</h2>
       <h3 class="text-decoration-underline">Frontend</h3>
-      <Card v-for="(tech, index) in skills.techStack.frontend" :key="index" class="skills mb-4">
+      <Card v-for="(tech, index) in skills.techStack.frontend" :key="index" class="skills mb-4" data-aos="zoom-in-up">
         <template #CardBody>
           <img :src="tech.img" alt="skills-img" loading="lazy"/>
           <h3>{{ tech.title }}</h3>

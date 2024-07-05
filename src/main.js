@@ -5,6 +5,8 @@ import store from './store'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap'
 import 'bootstrap-icons/font/bootstrap-icons.css'
+import  AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const app = createApp(App);
 
@@ -16,3 +18,4 @@ store.dispatch('fetchData'); // Fetch data when the app loads
 
 app.mount('#app');
 
+AOS.init()
