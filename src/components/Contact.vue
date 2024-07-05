@@ -29,8 +29,8 @@
                 required
               ></textarea>
             </div>
-            <button type="reset" class="btn btn-outline-dark me-4">Clear</button>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-outline-dark me-4 mb-2">Clear</button>
+            <button type="submit" class="btn btn-primary me-4 mb-2">Submit</button>
           </form>
         </div>
       </div>
