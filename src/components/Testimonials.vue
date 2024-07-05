@@ -1,4 +1,5 @@
 <template>
+  <div id="testimonials">
   <Carousel>
     <template #carouselItems>
       <div id="carouselExampleDark" class="carousel carousel-dark slide custom-carousel">
@@ -43,9 +44,9 @@
               :alt="testimonial.name"
               class="d-block testimonial-image"
             />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>{{ testimonial.name }} {{ testimonial.surname }}</h5>
-              <p>{{ testimonial.testimonial }}.</p>
+            <div class="carousel-caption d-block">
+              <h5 style="color: #fb8500; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">{{ testimonial.name }} {{ testimonial.surname }}</h5>
+              <p style="color: #fb8500; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">{{ testimonial.testimonial }}.</p>
             </div>
           </div>
         </div>
@@ -70,6 +71,7 @@
       </div>
     </template>
   </Carousel>
+</div>
 </template>
 
 <script>

@@ -1,6 +1,8 @@
 <template>
-    <div class="spinner-border text-primary" role="status">
+    <div class="py-5">
+      <div class="spinner-border text-primary" role="status">
       <span class="visually-hidden">Loading...</span>
+    </div>
     </div>
   </template>
   
@@ -14,4 +16,5 @@
     width: 3rem;
     height: 3rem;
   }
+  
   </style>

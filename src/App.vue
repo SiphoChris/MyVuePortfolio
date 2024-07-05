@@ -1,17 +1,14 @@
 <template>
-    <HomeView />
+  <HomeView />
 </template>
 
 <script>
-import HomeView from '@/views/HomeView.vue'
+import HomeView from "@/views/HomeView.vue";
 export default {
-components: {
-  HomeView
-}
-}
-
+  components: {
+    HomeView,
+  },
+};
 </script>
 
-<style src="./assets/css/style.css">
-</style>
-
+<style src="./assets/css/style.css"></style>

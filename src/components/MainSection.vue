@@ -2,6 +2,7 @@
   <div class="container-fluid" id="main-section">
     <Spinner v-if="loading" />
     <div v-else>
+      <About />
       <Education  />
       <Projects  />
       <Skills  />
@@ -12,6 +13,7 @@
 </template>
 
 <script>
+import About from '@/components/About.vue'
 import Education from "@/components/Education.vue";
 import Projects from "@/components/Projects.vue";
 import Skills from "@/components/Skills.vue";
@@ -24,6 +26,7 @@ import Swal from "sweetalert2";
 
 export default {
   components: {
+    About,
     Education,
     Skills,
     Experiences,

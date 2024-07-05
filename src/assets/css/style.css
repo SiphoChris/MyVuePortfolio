@@ -50,6 +50,10 @@ a,
   align-items: center;
 }
 
+.nav-item>a.nav-link:hover{
+  color: var(--accent);
+}
+
 .logo {
   font-weight: bold;
 }
@@ -59,6 +63,8 @@ a,
 .hero-section {
   padding: 36px;
   display: flex;
+  height: 90vh;
+  width: 100vw;
   justify-content: space-around;
   align-items: center;
   background-color: var(--primary);
@@ -72,7 +78,8 @@ a,
 }
 
 .hero-image {
-  width: 250px;
+  width: 280px;
+  border: 8px solid var(--accent);
   aspect-ratio: 1;
   object-fit: cover;
   object-position: center;
@@ -119,6 +126,10 @@ a,
   padding: 0 32px;
 }
 
+.box2{
+  background-color: #fff;
+}
+
 
 /* form */
 #contact-wrapper {
@@ -133,6 +144,7 @@ a,
 .contact-wrapper {
   width: 100vw;
 }
+
 
 /*projects*/
 .card-img-top {
@@ -173,3 +185,39 @@ footer {
     padding: 0 8px;
   }
 }
+
+
+/* animations */
+
+/* Fade in from the right */
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-right {
+  animation: fadeInRight 1s ease-in-out forwards;
+}
+
+/* Fade in from the left */
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-left {
+  animation: fadeInLeft 1s ease-in-out forwards;
+}
+
