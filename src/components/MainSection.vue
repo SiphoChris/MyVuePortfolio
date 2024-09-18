@@ -6,8 +6,6 @@
       <Education  />
       <Projects  />
       <Skills  />
-      <Experiences  />
-      <Testimonials  />
     </div>
   </div>
 </template>
@@ -17,20 +15,17 @@ import About from '@/components/About.vue'
 import Education from "@/components/Education.vue";
 import Projects from "@/components/Projects.vue";
 import Skills from "@/components/Skills.vue";
-import Experiences from "@/components/Experiences.vue";
-import Testimonials from "@/components/Testimonials.vue";
 import Spinner from "@/components/LoadingSpinner.vue";
 
 import axios from "axios";
 import Swal from "sweetalert2";
 
 export default {
+  name: "MainSection",
   components: {
     About,
     Education,
     Skills,
-    Experiences,
-    Testimonials,
     Projects,
     Spinner,
   },

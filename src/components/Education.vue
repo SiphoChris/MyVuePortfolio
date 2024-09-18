@@ -1,40 +1,51 @@
 <template>
-    <div class="container">
-      <div class="row">
-        <h3 class="mb-4">Education</h3>
-      <div id="education">
-      <div v-for="education in education" :key="education.id">
-        <div class="year-container m-auto">
-          <h4>{{ education.year }}</h4>
-        </div>
-        <img width="60" height="60" src="https://img.icons8.com/ios-glyphs/60/long-arrow-down.png" alt="long-arrow-down" class="mb-4"/>
-        <h4 class="mb-4">{{ education.description }} at {{ education.place }}</h4>
+  <div class="container my-5 py-5" id="EDUCATION">
+    <Spinner v-if="loading" />
+    <div v-else class="mb-5">
+      <div class="row gap-5">
+        <h3>Education</h3>
+        <Timeline :timeline="education" />
       </div>
     </div>
-      </div>
-    </div>
-  </template>
-  
-  <script>
-  import { mapState } from 'vuex';
-  
-  export default {
-    name: 'EducationComp',
-    computed: {
-      ...mapState(['education']),
+  </div>
+</template>
+
+<script>
+import { mapState } from "vuex";
+import Spinner from "@/components/LoadingSpinner.vue";
+import Timeline from "@/components/TimelineComp.vue";
+
+export default {
+  name: "EducationComp",
+  components: {
+    Timeline,
+    Spinner,
+  },
+  data() {
+    return {
+      loading: true,
+    };
+  },
+  computed: {
+    ...mapState(["education"]),
+  },
+  watch: {
+    education(newEducation) {
+      if (newEducation && newEducation.length > 0) {
+        this.loading = false;
+      }
     },
-  };
-  </script>
-  <style scoped>
-  .row{
-    margin: 6rem 0;
-  }
-  .year-container{
-    padding-top: 22px;
-    width: 80px;
-    height: 80px;
-    border: 5px black solid;
-    border-radius: 50%;
-    text-align: center;
-  }
-  </style>
+  },
+  mounted() {
+    if (this.education && this.education.length > 0) {
+      this.loading = false;
+    }
+  },
+};
+</script>
+
+<style scoped>
+
+</style>
+
+

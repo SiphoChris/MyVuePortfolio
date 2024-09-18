@@ -1,5 +1,5 @@
 <template>
-    <footer class="container-fluid">
+    <footer class="container-fluid mt-5 py-5">
       <div class="row">
         <p>
           &copy; {{ copyRights }} : <span>{{ getCurrentYear }}</span>

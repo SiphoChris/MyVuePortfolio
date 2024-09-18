@@ -18,5 +18,10 @@ export default {
 .card{
   width: 18rem;
   height: 400px;
+  background-color: #c0dff2;
+}
+.card:hover{
+  scale: 1.05;
+  transition: 0.5s;
 }
 </style>

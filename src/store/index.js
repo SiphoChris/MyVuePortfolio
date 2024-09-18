@@ -1,17 +1,17 @@
-import { createStore } from 'vuex'
-import axios from 'axios'
+import { createStore } from 'vuex';
+import axios from 'axios';
+import Swal from 'sweetalert2';
 
-const DATA_URL = "https://siphochris.github.io/eompdata/"
+const DATA_URL = "https://siphochris.github.io/eompdata/";
 
 const store = createStore({
   state: {
-    jobTitle: [],
-    about: {},
-    education: [],
-    experiences: {},
-    skills: {},
-    testimonials: [],
-    projects: [],
+    jobTitle: null,
+    about: null,
+    education: null,
+    skills: null,
+    softSkills: null,
+    projects: null,
   },
   mutations: {
     loadJobTitle(state, jobTitle) {
@@ -23,49 +23,37 @@ const store = createStore({
     loadEducation(state, education) {
       state.education = education;
     },
-    loadExperience(state, experiences) {
-      state.experiences = experiences;
-    },
-    loadSkills(state, skills) {
+    loadSkills(state, skills) { 
       state.skills = skills;
     },
-    loadTestimonials(state, testimonials) {
-      state.testimonials = testimonials;
+    loadSoftSkills(state, softSkills) {
+      state.softSkills = softSkills;
     },
     loadProjects(state, projects) {
       state.projects = projects;
-    },
+    }
   },
   actions: {
     async fetchData({ commit }) {
       try {
-        const response = await axios.get(DATA_URL);
-        const data = response.data;
-        commit('loadJobTitle', data.jobTitle);
-        commit('loadAbout', data.about);
-        commit('loadEducation', data.education);
-        commit('loadExperience', data.experiences);
-        commit('loadSkills', data.skills);
-        commit('loadTestimonials', data.testimonials);
-        commit('loadProjects', data.projects);
+        const { data } = await axios.get(DATA_URL);
+        const { jobTitle, about, education, technicalSkills, softSkills, projects } = data;
+
+        commit('loadJobTitle', jobTitle);
+        commit('loadAbout', about);
+        commit('loadEducation', education);
+        commit('loadSkills', technicalSkills);
+        commit('loadSoftSkills', softSkills);
+        commit('loadProjects', projects.reverse());
       } catch (error) {
         Swal.fire({
           icon: "error",
           title: "Oops...",
-          text: "Data failed to load", error
+          text: "Data failed to load",
         });
       }
     },
-  },
-  getters: {
-    getJobTitle: (state) => state.jobTitle,
-    getAbout: (state) => state.about,
-    getEducation: (state) => state.education,
-    getExperiences: (state) => state.experiences,
-    getSkills: (state) => state.skills,
-    getTestimonials: (state) => state.testimonials,
-    getProjects: (state) => state.projects,
-  },
+  }
 });
 
 export default store;

@@ -1,6 +1,6 @@
 <template>
   <div class="home containter-fluid">
-    <Nav />
+    <Nav/>
     <Hero />
     <MainSection />
     <Contact />
