@@ -4,7 +4,7 @@
     <div v-else>
       <div class="row justify-content-between align-items-center gap-4">
         <!-- Web Development Skills Section -->
-        <h2 class="my-5">Web Development Skills</h2>
+        <h2 class="my-5">Technical Skills</h2>
 
         <!-- Frontend Skills -->
         <h3 class="text-decoration-underline">Frontend</h3>

@@ -3,9 +3,9 @@
     <Spinner v-if="loading" />
     <div v-else>
       <About />
+      <Skills  />
       <Education  />
       <Projects  />
-      <Skills  />
     </div>
   </div>
 </template>
