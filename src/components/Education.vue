@@ -3,7 +3,7 @@
     <Spinner v-if="loading" />
     <div v-else class="mb-5">
       <div class="row gap-5">
-        <h3>Education</h3>
+        <h3>Education &amp; Experiences</h3>
         <Timeline :timeline="education" />
       </div>
     </div>
