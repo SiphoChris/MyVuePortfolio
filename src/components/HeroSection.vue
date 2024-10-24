@@ -6,12 +6,24 @@
         <h1>{{ line }}</h1>
       </li>
     </ul>
-    <img
-      :src="about.profile"
-      alt="Profile Image"
-      class="hero-image fade-in-left"
-      loading="lazy" 
-    />
+    <div class="d-flex flex-column">
+      <img
+        :src="about.profile"
+        alt="Profile Image"
+        class="hero-image fade-in-left"
+        loading="lazy"
+      />
+      <a
+        class="btn btn-success mt-4"
+        data-aos="fade-up"
+        data-aos-duration="1100"
+        style="width: auto; align-self: center"
+        role="button"
+        href="https://drive.google.com/uc?export=download&id=1WZQDmMIQscyPPq1M4t97IVWS9EgCe2OC"
+        download
+        >Download CV</a
+      >
+    </div>
     <a id="cta2" href="#reachMe"
       >{{ reachMe }} <i class="bi bi-telephone-fill"></i
     ></a>
@@ -111,4 +123,3 @@ export default {
   background-size: 100px 100px 100px;
 }
 </style>
-   

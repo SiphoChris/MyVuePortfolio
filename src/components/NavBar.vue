@@ -34,13 +34,21 @@
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#REACHME">Reach Me</a>
           </li>
+          <!-- <li class="nav-item">
+            <a
+              class="btn btn-success" target="_blank"
+              role="button" href="https://drive.google.com/file/d/1WZQDmMIQscyPPq1M4t97IVWS9EgCe2OC/view?usp=drive_link"
+              download="https://drive.google.com/file/d/1WZQDmMIQscyPPq1M4t97IVWS9EgCe2OC/view?usp=drive_link"
+              >Download CV</a
+            >
+          </li> -->
         </ul>
       </div>
     </div>
   </nav>
 </template>
-  
-  <script>
+
+<script>
 export default {
   name: "NavBar",
   data() {
@@ -52,8 +60,5 @@ export default {
   },
 };
 </script>
-  
-  <style src="../assets/css/style.css">
-</style>
 
-
+<style src="../assets/css/style.css"></style>
