@@ -13,7 +13,7 @@
             v-for="(tech, index) in skills.techStack.frontend"
             :key="index"
             class="skills mb-4 col-md-4"
-            data-aos="zoom-in-up"
+            data-aos="zoom-in"
           >
             <template #CardBody>
               <img :src="tech.img" alt="frontend-skill-img" loading="lazy" class="m-auto" />
@@ -29,7 +29,7 @@
             v-for="(tech, index) in skills.techStack.backend"
             :key="index"
             class="skills mb-4 col-md-4"
-            data-aos="zoom-in-up"
+            data-aos="zoom-in"
           >
             <template #CardBody>
               <img :src="tech.img" alt="backend-skill-img" loading="lazy" class="m-auto" />
@@ -45,7 +45,7 @@
             v-for="(tool, index) in skills.techStack.tools"
             :key="index"
             class="tools mb-5 col-md-4"
-            data-aos="zoom-in-up"
+            data-aos="zoom-in"
           >
             <template #CardBody>
               <img :src="tool.img" alt="tools-img" loading="lazy" class="m-auto" />

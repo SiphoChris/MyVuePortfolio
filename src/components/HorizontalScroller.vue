@@ -1,33 +1,30 @@
 <template>
   <div>
     <h3>AWS skill-centre certs</h3>
-    <div
-    class="relative flex flex-col bg-transparent overflow-hidden"
-  >
-    <div class="w-full max-w-3xl mx-auto px-2 md:px-4 py-16">
-      <div class="text-center">
-        <!-- Logo Carousel animation -->
-        <div
-          class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_64px,_black_calc(100%-64px),transparent_100%)]"
-          ref="carousel"
-        >
-          <ul
-            class="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll"
+    <div class="relative flex flex-col bg-transparent overflow-hidden">
+      <div class="w-full max-w-3xl mx-auto px-2 md:px-4 py-16">
+        <div class="text-center">
+          <div
+            class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_64px,_black_calc(100%-64px),transparent_100%)]"
+            ref="carousel"
           >
-            <li v-for="(logo, index) in logos" :key="index">
-              <img :src="logo.src" :alt="logo.alt" class="h-36" />
-            </li>
-          </ul>
+            <ul
+              class="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll"
+            >
+              <li v-for="(logo, index) in logos" :key="index">
+                <img :src="logo.src" :alt="logo.alt" class="h-36" />
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- End: Logo Carousel animation -->
       </div>
     </div>
-  </div>
   </div>
 </template>
 
 <script>
 export default {
+
   data() {
     return {
       logos: [
