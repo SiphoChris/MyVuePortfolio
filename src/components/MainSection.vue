@@ -5,6 +5,7 @@
       <About />
       <Skills  />
       <Education  />
+      <Certificates />
       <Projects  />
     </div>
   </div>
@@ -13,6 +14,7 @@
 <script>
 import About from '@/components/About.vue'
 import Education from "@/components/Education.vue";
+import Certificates from "@/components/HorizontalScroller.vue"
 import Projects from "@/components/Projects.vue";
 import Skills from "@/components/Skills.vue";
 import Spinner from "@/components/LoadingSpinner.vue";
@@ -25,6 +27,7 @@ export default {
   components: {
     About,
     Education,
+    Certificates,
     Skills,
     Projects,
     Spinner,
