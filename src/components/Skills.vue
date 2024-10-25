@@ -16,7 +16,7 @@
             data-aos="zoom-in-up"
           >
             <template #CardBody>
-              <img :src="tech.img" alt="frontend-skill-img" loading="lazy" />
+              <img :src="tech.img" alt="frontend-skill-img" loading="lazy" class="m-auto" />
               <h3>{{ tech.title }}</h3>
             </template>
           </Card>
@@ -32,7 +32,7 @@
             data-aos="zoom-in-up"
           >
             <template #CardBody>
-              <img :src="tech.img" alt="backend-skill-img" loading="lazy" />
+              <img :src="tech.img" alt="backend-skill-img" loading="lazy" class="m-auto" />
               <h3>{{ tech.title }}</h3>
             </template>
           </Card>
@@ -48,7 +48,7 @@
             data-aos="zoom-in-up"
           >
             <template #CardBody>
-              <img :src="tool.img" alt="tools-img" loading="lazy" />
+              <img :src="tool.img" alt="tools-img" loading="lazy" class="m-auto" />
               <h3>{{ tool.title }}</h3>
             </template>
           </Card>
