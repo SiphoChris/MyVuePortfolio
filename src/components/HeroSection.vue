@@ -23,10 +23,10 @@
         download
         >Download CV</a
       >
+      <a id="cta2" href="#reachMe" class="mx-auto"
+        >{{ reachMe }} <i class="bi bi-telephone-fill"></i
+      ></a>
     </div>
-    <a id="cta2" href="#reachMe"
-      >{{ reachMe }} <i class="bi bi-telephone-fill"></i
-    ></a>
   </div>
 </template>
 
